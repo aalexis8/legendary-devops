@@ -4,6 +4,7 @@ const port = 3000;
 
 
 app.get('/demo', (req, res) => {
+	res.set({ 'content-type': 'application/json; charset=utf-8' });
 	res.set('X-full-stack', '4life');
 	res.status(418);
 	res.send('some other lame internet joke.');
